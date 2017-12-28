@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<title>GoMetio - Makes your internet connection faster online for free, no download</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="icon" type="image/png" href="prefabs/favicon.png" />
 	<meta name="author" content="Tomo Yamamoto (GoMetio Founder, CEO)">
 	<link rel="apple-touch-icon" href="prefabs/favicon.png">
@@ -14,7 +15,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta name="description" content="Make your internet connection faster and safer with no downloads on GoMetio!">
 	<meta name="keywords" content="GoMetio, gometio, internet, faster, connection, network, no download, no downloads, free, free forever, online, html, html5, one, click, oneclick, tomo, yamamoto, tomo yamamoto, startup, internet, github, io, non-profit, non profit">
-	<link rel="stylesheet" href="css/gometio.css">
+	<link rel="stylesheet" href="https://gometio.github.io/css/gometio.css">
+	<style>
+		.shareBar {
+			position: fixed;
+			bottom: 5px;
+			width: 100%;
+		}
+		.sharebtn {
+			background: transparent;
+			border: none;
+			opacity: 0.6;
+		}
+		.sharebtn:hover {
+			opacity: 1;
+		}
+	</style>
 </head>
 
 <body data-gr-c-s-loaded="true">
@@ -46,6 +62,25 @@
 				</div>
 			</div>
 		</form>
+	</div>
+	<div class="shareBar">
+		<span>share or follow<br>GoMetio/Tomo Yamamoto (developer)</span><br>
+		<button class="sharebtn" onclick="share('twitter')">
+			<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMTAgMzEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMTAgMzEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnIGlkPSJYTUxJRF84MjZfIj4KCTxwYXRoIGlkPSJYTUxJRF84MjdfIiBkPSJNMzAyLjk3Myw1Ny4zODhjLTQuODcsMi4xNi05Ljg3NywzLjk4My0xNC45OTMsNS40NjNjNi4wNTctNi44NSwxMC42NzUtMTQuOTEsMTMuNDk0LTIzLjczICAgYzAuNjMyLTEuOTc3LTAuMDIzLTQuMTQxLTEuNjQ4LTUuNDM0Yy0xLjYyMy0xLjI5NC0zLjg3OC0xLjQ0OS01LjY2NS0wLjM5Yy0xMC44NjUsNi40NDQtMjIuNTg3LDExLjA3NS0zNC44NzgsMTMuNzgzICAgYy0xMi4zODEtMTIuMDk4LTI5LjE5Ny0xOC45ODMtNDYuNTgxLTE4Ljk4M2MtMzYuNjk1LDAtNjYuNTQ5LDI5Ljg1My02Ni41NDksNjYuNTQ3YzAsMi44OSwwLjE4Myw1Ljc2NCwwLjU0NSw4LjU5OCAgIEMxMDEuMTYzLDk5LjI0NCw1OC44Myw3Ni44NjMsMjkuNzYsNDEuMjA0Yy0xLjAzNi0xLjI3MS0yLjYzMi0xLjk1Ni00LjI2Ni0xLjgyNWMtMS42MzUsMC4xMjgtMy4xMDQsMS4wNS0zLjkzLDIuNDY3ICAgYy01Ljg5NiwxMC4xMTctOS4wMTMsMjEuNjg4LTkuMDEzLDMzLjQ2MWMwLDE2LjAzNSw1LjcyNSwzMS4yNDksMTUuODM4LDQzLjEzN2MtMy4wNzUtMS4wNjUtNi4wNTktMi4zOTYtOC45MDctMy45NzcgICBjLTEuNTI5LTAuODUxLTMuMzk1LTAuODM4LTQuOTE0LDAuMDMzYy0xLjUyLDAuODcxLTIuNDczLDIuNDczLTIuNTEzLDQuMjI0Yy0wLjAwNywwLjI5NS0wLjAwNywwLjU5LTAuMDA3LDAuODg5ICAgYzAsMjMuOTM1LDEyLjg4Miw0NS40ODQsMzIuNTc3LDU3LjIyOWMtMS42OTItMC4xNjktMy4zODMtMC40MTQtNS4wNjMtMC43MzVjLTEuNzMyLTAuMzMxLTMuNTEzLDAuMjc2LTQuNjgxLDEuNTk3ICAgYy0xLjE3LDEuMzItMS41NTcsMy4xNi0xLjAxOCw0Ljg0YzcuMjksMjIuNzYsMjYuMDU5LDM5LjUwMSw0OC43NDksNDQuNjA1Yy0xOC44MTksMTEuNzg3LTQwLjM0LDE3Ljk2MS02Mi45MzIsMTcuOTYxICAgYy00LjcxNCwwLTkuNDU1LTAuMjc3LTE0LjA5NS0wLjgyNmMtMi4zMDUtMC4yNzQtNC41MDksMS4wODctNS4yOTQsMy4yNzljLTAuNzg1LDIuMTkzLDAuMDQ3LDQuNjM4LDIuMDA4LDUuODk1ICAgYzI5LjAyMywxOC42MDksNjIuNTgyLDI4LjQ0NSw5Ny4wNDcsMjguNDQ1YzY3Ljc1NCwwLDExMC4xMzktMzEuOTUsMTMzLjc2NC01OC43NTNjMjkuNDYtMzMuNDIxLDQ2LjM1Ni03Ny42NTgsNDYuMzU2LTEyMS4zNjcgICBjMC0xLjgyNi0wLjAyOC0zLjY3LTAuMDg0LTUuNTA4YzExLjYyMy04Ljc1NywyMS42My0xOS4zNTUsMjkuNzczLTMxLjUzNmMxLjIzNy0xLjg1LDEuMTAzLTQuMjk1LTAuMzMtNS45OTggICBDMzA3LjM5NCw1Ny4wMzcsMzA1LjAwOSw1Ni40ODYsMzAyLjk3Myw1Ny4zODh6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+		</button>
+		<button class="sharebtn" onclick="share('insta')">
+			<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAxNjkuMDYzIDE2OS4wNjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2OS4wNjMgMTY5LjA2MzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0xMjIuNDA2LDBINDYuNjU0QzIwLjkyOSwwLDAsMjAuOTMsMCw0Ni42NTV2NzUuNzUyYzAsMjUuNzI2LDIwLjkyOSw0Ni42NTUsNDYuNjU0LDQ2LjY1NWg3NS43NTIgICBjMjUuNzI3LDAsNDYuNjU2LTIwLjkzLDQ2LjY1Ni00Ni42NTVWNDYuNjU1QzE2OS4wNjMsMjAuOTMsMTQ4LjEzMywwLDEyMi40MDYsMHogTTE1NC4wNjMsMTIyLjQwNyAgIGMwLDE3LjQ1NS0xNC4yMDEsMzEuNjU1LTMxLjY1NiwzMS42NTVINDYuNjU0QzI5LjIsMTU0LjA2MywxNSwxMzkuODYyLDE1LDEyMi40MDdWNDYuNjU1QzE1LDI5LjIwMSwyOS4yLDE1LDQ2LjY1NCwxNWg3NS43NTIgICBjMTcuNDU1LDAsMzEuNjU2LDE0LjIwMSwzMS42NTYsMzEuNjU1VjEyMi40MDd6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNODQuNTMxLDQwLjk3Yy0yNC4wMjEsMC00My41NjMsMTkuNTQyLTQzLjU2Myw0My41NjNjMCwyNC4wMiwxOS41NDIsNDMuNTYxLDQzLjU2Myw0My41NjFzNDMuNTYzLTE5LjU0MSw0My41NjMtNDMuNTYxICAgQzEyOC4wOTQsNjAuNTEyLDEwOC41NTIsNDAuOTcsODQuNTMxLDQwLjk3eiBNODQuNTMxLDExMy4wOTNjLTE1Ljc0OSwwLTI4LjU2My0xMi44MTItMjguNTYzLTI4LjU2MSAgIGMwLTE1Ljc1LDEyLjgxMy0yOC41NjMsMjguNTYzLTI4LjU2M3MyOC41NjMsMTIuODEzLDI4LjU2MywyOC41NjNDMTEzLjA5NCwxMDAuMjgxLDEwMC4yOCwxMTMuMDkzLDg0LjUzMSwxMTMuMDkzeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHBhdGggZD0iTTEyOS45MjEsMjguMjUxYy0yLjg5LDAtNS43MjksMS4xNy03Ljc3LDMuMjJjLTIuMDUxLDIuMDQtMy4yMyw0Ljg4LTMuMjMsNy43OGMwLDIuODkxLDEuMTgsNS43MywzLjIzLDcuNzggICBjMi4wNCwyLjA0LDQuODgsMy4yMiw3Ljc3LDMuMjJjMi45LDAsNS43My0xLjE4LDcuNzgtMy4yMmMyLjA1LTIuMDUsMy4yMi00Ljg5LDMuMjItNy43OGMwLTIuOS0xLjE3LTUuNzQtMy4yMi03Ljc4ICAgQzEzNS42NjEsMjkuNDIxLDEzMi44MjEsMjguMjUxLDEyOS45MjEsMjguMjUxeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+		</button>
+		<script>
+			function share(where) {
+				if(where == "twitter") {
+					window.open("https://twitter.com/intent/tweet?text=How%20to%20make%20internet%20connection%20faster?%20Use%20GoMetio%20(%20https://gometio.github.io%20)!%20With%20GoMetio,%20you%20can%20make%20your%20internet%20connection%20faster%20online%20for%20free%20with%20one%20click!");
+				}
+				if(where == "insta") {
+					window.open("https://www.instagram.com/tomocode/");
+				}
+			}
+		</script>
 	</div>
 	<meta id="fake_position_meta" name="serverTrick" content="{malib:soms/asomdpom;asdoood;doobServer.binary:101101,twisted:09238}">
 	<script src="js/gometio.jquery.js"></script>
